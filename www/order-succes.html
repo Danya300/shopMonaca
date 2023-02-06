@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script>
+        
+    </script>
+    <style>
+        svg.am_Success_Icon,
+svg.am_Error_Icon{
+width: 124px; /* Размер иконок */
+margin: auto auto;
+}
+.am_sdp_Header_Status{
+color: #fff;
+font-size: 140%;
+}
+svg.am_Success_Icon path, svg.am_Success_Icon polyline, svg.am_Success_Icon line,
+svg.am_Error_Icon path, svg.am_Error_Icon polyline, svg.am_Error_Icon line{
+fill: none;
+stroke: black; /* Цвет иконок */
+stroke-width: 15; /* Толщина линий */
+stroke-linecap: round;
+stroke-linejoin: round;
+}
+ 
+svg.am_Success_Icon .am_SVG_circle,
+svg.am_Error_Icon .am_SVG_circle{
+stroke-dasharray: 1460;
+animation: am_SVG_circle 2s ease-in ;
+}
+ 
+svg.am_Success_Icon .am_SVG_check{
+stroke-dasharray: 630;
+animation: am_SVG_check 2s ease-in ;
+}
+ 
+svg.am_Error_Icon .am_SVG_error1{
+stroke-dasharray: 630;
+animation: am_SVG_error1 2s ease-in ;
+}
+svg.am_Error_Icon .am_SVG_error2{
+stroke-dasharray: 630;
+animation: am_SVG_error2 3s ease-in ;
+}
+ 
+@keyframes am_SVG_circle {
+0%, 60% {
+stroke-dashoffset: -1460;
+}
+100% {
+stroke-dashoffset: 0;
+}
+}
+@keyframes am_SVG_check {
+0% {
+stroke-dashoffset: 630;
+}
+40% {
+stroke-dashoffset: 0;
+}
+}
+@keyframes am_SVG_error1 {
+0% {
+stroke-dashoffset: 630;
+}
+20% {
+stroke-dashoffset: 0;
+}
+}
+@keyframes am_SVG_error2 {
+0%, 20% {
+stroke-dashoffset: 630;
+}
+40% {
+stroke-dashoffset: 0;
+}
+}
+        </style>
+</head>
+<body>
+    <audio volume="-10000" src="samplesuc2.mp3" autoplay ></audio>
+    <div class="topbar">
+        <div class="nn" style="height:15px;"></div>
+        <p align="center"><img src="logo.jpg" width="40px"><br>
+        <b style="font-size:20px">Заказ оформлен</b></p>
+    </div>
+<div class="nn" style="height:200px;"></div>
+    <center>
+    <svg viewbox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="am_Success_Icon">
+<path class="am_SVG_circle" d="m443.0136,114.07007a236.95276,236.95276 0 0 1 44.1553,137.73747c0,129.97005 -106.94772,236.96443 -236.91777,236.96443s-236.91777,-106.94772 -236.91777,-236.91777s106.94772,-236.96443 236.91777,-236.96443a236.99941,236.99941 0 0 1 168.72548,70.59483"></path>
+<polyline class="am_SVG_check" points="104.4892349243164,309.2001647949219 195.57406616210938,402.9600524902344 418.9292297363281,85.03718566894531 "></polyline>
+</svg></center>
+<div class="nn" style="height:250px;"></div>
+<form action="main.html">
+    <input class="btn" type="submit" value="На главную" /></form>
+</body>
+</html>

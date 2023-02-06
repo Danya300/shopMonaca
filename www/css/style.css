@@ -1,0 +1,105 @@
+.logo{
+    margin:0 auto;
+    
+}
+.topbar{
+    background-color: #ffffff;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+        display:inline;
+
+}
+body {
+  margin: auto;
+  /* Растягиваем body по высоте html */
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+form{
+    min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.btn{
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 37px;
+    color: #799dec;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+button{
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 37px;
+    color: #799dec;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+}
+.btn:active {
+    top: 4px;
+	box-shadow: none;
+}
+
+#carouselExampleControls{
+    width: auto;
+}
+#carouselExampleControls img{
+    width: 100%;
+    height: auto;
+    border-radius: 70px;
+    border: 20px #fff solid;
+}
+#mapSurface {
+    width: 600px;
+    height: 400px;
+    
+}
+#map {
+  width: auto;
+  height: 320px;
+  border: 20px #fff solid;
+  border-radius: 70px;
+}
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #000000; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.3s linear infinite;
+    margin:0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.block{
+width: auto;
+font-size:20px;
+
+}
+.block img{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 20px;
+    display: block;
+    
+}
+select{
+width: auto;
+margin: 10px auto 20px;
+font-size:25px;
+}
+#cc{
+
+margin: 10px auto 20px;
+font-size:25px;
+}
+.card{   
+    top: 150px;
+}
