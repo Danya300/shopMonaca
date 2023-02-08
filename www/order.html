@@ -2,12 +2,28 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="components/loader.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	
+	<style>
+        #map {
+
+  z-index: 2;
+}
+		/* Custom styles */
+		body {
+			font-family: 'Poppins', sans-serif;
+			background-color: #f2f2f2;
+		}
+	</style>a
+	<title>Credit Card Checkout</title>
     <script>
 navigator.geolocation.getCurrentPosition(success, error, {
   // высокая точность
@@ -38,7 +54,7 @@ function error({ message }) {
 <body>
     <script src="script.js" type="module"></script>
     <div class="topbar">
-        <p align="center"><img src="logo.jpg" width="40px"><br>
+        <p align="center"><img src="logo.png" width="40px"><br>
         <b style="font-size:20px">Оформление заказа</b></p>
         
         
@@ -52,18 +68,48 @@ function error({ message }) {
   <!-- наш скрипт-модуль -->
   <script src="script.js" type="module"></script>
 
-    <select>
-        <option>Выберите размер вещи</option>
-  <option>S(размер обуви:36-38)</option>
-  <option>M(размер обуви:38-40)</option>
-  <option>L(размер обуви:42-44)</option>
-  <option>XL(размер обуви:44-46)</option>
+    <select id = "qwe">
+        <option>   Выберите доставку   </option>
+  <option>Самовывоз</option>
+  <option>Курьер</option>
+  <option>Почта России</option>
     </select>
-
-    <input id="cc"type="text" value="Введите данные карты"></input>
+<div class="container mx-auto">
+        <div class="flex justify-center">
+            <div class="w-full max-w-sm">
+                <div class="bg-white rounded-lg shadow-lg p-5">
+                    <h3 class="text-center text-lg font-medium mb-5">Введите данные карты</h3>
+                    <form>
+                        <div class="mb-5">
+                            <input class="w-full border border-gray-400 rounded-lg p-3" type="text" placeholder="ФИО">
+            </div>
+                            <div class="mb-5">
+                                <input class="w-full border border-gray-400 rounded-lg p-3" type="text" placeholder="Номер карты">
+            </div>
+                                <div class="mb-5">
+                                    <input class="w-full border border-gray-400 rounded-lg p-3" type="text" placeholder="Срок хранения карты">
+            </div>
+                                    <div class="mb-5">
+                                        <input class="w-full border border-gray-400 rounded-lg p-3" maxlength="3" type="text" placeholder="CVV">                                        
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+										<form action="order-succes.html">
+    
+    
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
     <form action="order-succes.html">
     <input class="btn" type="submit" value="Оформить заказ" /></form>
   <form action="main.html">
     <input class="btn" type="submit" value="На главную" /></form>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.></script>
+    <input id="cc"type="text" placeholder="Введите данные карты" autocomplete="off"></input>
+    
 </body>
 </html>
